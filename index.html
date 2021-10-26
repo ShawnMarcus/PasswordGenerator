@@ -18,6 +18,48 @@
     <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
 </head>
+<div id="container">
+<h2>Password Generator</h2>
+<section id="result-container">
+    <!-- This span is where the password will be displayed -->
+    <span id="result"></span>
+    <!-- shortcut is: button.btn#clipboard -->
+    <button class="btn" id="clipboard">
+        <!-- Font Awesome Icon -->
+        <i class="far fa-clipboard"></i>
+    </button>
+</section>
+<section id="options">
+    <div class="option">
+        <!-- link the "for" in label with the "id" in input to link these together -->
+        <label for="lowercase">Lowercase Letters</label>
+        <input type="checkbox" id="lowercase" checked>
+    </div>
+    <div class="option">
+        <!-- link the "for" in label with the "id" in input to link these together -->
+        <label for="uppercase">Uppercase Letters</label>
+        <input type="checkbox" id="uppercase" checked>
+    </div>
+    <div class="option">
+        <!-- link the "for" in label with the "id" in input to link these together -->
+        <label for="numbers">Numbers</label>
+        <input type="checkbox" id="numbers" checked>
+    </div>
+    <div class="option">
+        <!-- link the "for" in label with the "id" in input to link these together -->
+        <label for="symbols">Symbols</label>
+        <input type="checkbox" id="symbols" checked>
+    </div>
+    <div class="option">
+        <!-- link the "for" in label with the "id" in input to link these together -->
+        <label for="length">Length</label>
+        <!-- Value is the starting/default number. Min & Max set the range that the user can select -->
+        <input type="number" id="length" value="10" min="4" max="20">
+    </div>
+</section>
+<button class="btn" id="generate">Generate Password</button>
+</button>
+</div>
 
 <body>
 
